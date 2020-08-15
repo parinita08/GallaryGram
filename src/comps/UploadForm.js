@@ -20,7 +20,7 @@ const UploadForm = () => {
             setFile(null);
             setError('Please select an image file with png or jpeg format');
         }
-    }
+    };
 
     return(
         <form>
@@ -34,7 +34,7 @@ const UploadForm = () => {
                 {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
-    )
+    );
 }
 
 export default UploadForm;
